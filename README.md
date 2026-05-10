@@ -91,3 +91,31 @@ colcon build --symlink-install
 # Source the local workspace
 source install/setup.bash
 ```
+
+## Running
+
+After building the workspace, source the local setup file:
+
+```bash
+source install/setup.bash
+```
+
+Run the Morse encoder node:
+
+```bash
+ros2 run <package_name> <encoder_node>
+```
+
+Run the OLED blinking node:
+
+```bash
+ros2 run <package_name> <oled_blink_node>
+```
+
+Run the camera decoder node:
+
+```bash
+ros2 run <package_name> <camera_decoder_node>
+```
+
+
