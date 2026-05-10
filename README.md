@@ -72,3 +72,22 @@ Camera Decoder Node
 Decoded Text
 ```
 
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ksero225/MorseBlinkTranslator.git
+cd MorseBlinkTranslator
+
+# Source ROS 2
+source /opt/ros/jazzy/setup.bash
+
+# Install dependencies
+rosdep install -i --from-path src --rosdistro jazzy -y
+
+# Build the workspace
+colcon build --symlink-install
+
+# Source the local workspace
+source install/setup.bash
+```
